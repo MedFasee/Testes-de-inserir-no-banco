@@ -2,8 +2,6 @@
 -- PostgreSQL database dump
 --
 
-\restrict IcZ8hPFRuLSzAM9w67Tz4SXxOI8SHukweVEpTvF9vKtJeWG379z1oDUUWD8CCyi
-
 -- Dumped from database version 18.3
 -- Dumped by pg_dump version 18.3
 
@@ -534,6 +532,3 @@ SELECT pg_catalog.setval('public.unidade_federativa_id_unidade_federativa_seq', 
 --
 -- PostgreSQL database dump complete
 --
-
-\unrestrict IcZ8hPFRuLSzAM9w67Tz4SXxOI8SHukweVEpTvF9vKtJeWG379z1oDUUWD8CCyi
-
