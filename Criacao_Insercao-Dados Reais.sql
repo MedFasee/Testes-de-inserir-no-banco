@@ -61,6 +61,13 @@ CREATE TABLE evento_cf (
     id_evento INT
 );
 
+CREATE TABLE sinal_digital_fc (
+    id_area SERIAL PRIMARY KEY,
+    inicio_utc VARCHAR NOT NULL,
+    inicio_bsb VARCHAR,
+    tr_ms VARCHAR,
+    variacao_defasagem VARCHAR
+);
 -- =============================================================================
 -- 2. RESTRIÇÕES DE CHAVE ESTRANGEIRA
 -- =============================================================================
@@ -191,3 +198,12 @@ BEGIN
         INSERT INTO evento_cf (id_evento) VALUES (v_id_evento);
     END LOOP;
 END $$;
+
+-- Tabela com dados de falhas de comutação
+INSERT INTO sinal_digital_fc (inicio_utc, inicio_bsb, tr_ms, variacao_defasagem)
+SELECT 
+    inicio_utc,
+    inicio_bsb,
+    tr_ms,
+    variacao_defasagem
+FROM staging_eventos;
