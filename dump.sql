@@ -1,534 +1,324 @@
---
--- PostgreSQL database dump
---
-
--- Dumped from database version 18.3
--- Dumped by pg_dump version 18.3
-
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
-SET transaction_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
-SET check_function_bodies = false;
-SET xmloption = content;
-SET client_min_messages = warning;
-SET row_security = off;
-
---
--- Data for Name: area; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO public.area VALUES (1, 'DESCONHECIDA', 'N/A');
-
-
---
--- Data for Name: unidade_federativa; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO public.unidade_federativa VALUES (1, 'DESCONHECIDA', 'ND', 1);
-
-
---
--- Data for Name: localizacao; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO public.localizacao VALUES (1, 0, 0, 1);
-
-
---
--- Data for Name: terminal; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO public.terminal VALUES (1, 0, 'BMTE', 1, 'BMTE', 'BMTE');
-INSERT INTO public.terminal VALUES (2, 0, 'FURNAS', 1, 'FURNAS', 'FURNAS');
-INSERT INTO public.terminal VALUES (3, 0, 'XRTE', 1, 'XRTE', 'XRTE');
-
-
---
--- Data for Name: evento; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO public.evento VALUES (1, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (2, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (3, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (4, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (5, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (6, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (7, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (8, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (9, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (10, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (11, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (12, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (13, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (14, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (15, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (16, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (17, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (18, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (19, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (20, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (21, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (22, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (23, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (24, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (25, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (26, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (27, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (28, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (29, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (30, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (31, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (32, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (33, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (34, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (35, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (36, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (37, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (38, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (39, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (40, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (41, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (42, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (43, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (44, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (45, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (46, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (47, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (48, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (49, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (50, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (51, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (52, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (53, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (54, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (55, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (56, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (57, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (58, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (59, 'TIPO1', NULL, 2);
-INSERT INTO public.evento VALUES (60, 'TIPO1', NULL, 2);
-INSERT INTO public.evento VALUES (61, 'TIPO1', NULL, 2);
-INSERT INTO public.evento VALUES (62, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (63, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (64, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (65, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (66, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (67, 'TIPO1', NULL, 2);
-INSERT INTO public.evento VALUES (68, 'TIPO1', NULL, 2);
-INSERT INTO public.evento VALUES (69, 'TIPO1', NULL, 2);
-INSERT INTO public.evento VALUES (70, 'TIPO1', NULL, 2);
-INSERT INTO public.evento VALUES (71, 'TIPO1', NULL, 2);
-INSERT INTO public.evento VALUES (72, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (73, 'TIPO1', NULL, 2);
-INSERT INTO public.evento VALUES (74, 'TIPO1', NULL, 2);
-INSERT INTO public.evento VALUES (75, 'TIPO1', NULL, 2);
-INSERT INTO public.evento VALUES (76, 'TIPO1', NULL, 2);
-INSERT INTO public.evento VALUES (77, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (78, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (79, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (80, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (81, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (82, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (83, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (84, 'TIPO1', NULL, 1);
-INSERT INTO public.evento VALUES (85, 'TIPO1', NULL, 2);
-INSERT INTO public.evento VALUES (86, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (87, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (88, 'TIPO1', NULL, 3);
-INSERT INTO public.evento VALUES (89, 'TIPO1', NULL, 3);
-
-
---
--- Data for Name: evento_cf; Type: TABLE DATA; Schema: public; Owner: postgres
---
-INSERT INTO public.evento_cf (
-    id_evento_cf,
-    id_evento,
-    inicio_evento_utc,
-    inicio_evento_bsb,
-    isss_tr,
-    isss_delta_theta_max
-)
-VALUES
--- 1
-(1,1,'2024-02-29 18:47:05.416+00','2024-02-29 15:47:05.416',NULL,NULL),
-
--- 2
-(2,2,'2024-03-06 20:59:48.708+00','2024-03-06 17:59:48.708',127,13),
-
--- 3
-(3,3,'2024-03-15 04:12:34.716+00','2024-03-15 01:12:34.716',164,5),
-
--- 4
-(4,4,'2024-03-16 19:53:27.641+00','2024-03-16 16:53:27.641',114,14),
-
--- 5
-(5,5,'2024-04-07 23:27:49.958+00','2024-04-07 20:27:49.958',204,15),
-
--- 6
-(6,6,'2024-04-23 18:43:48.741+00','2024-04-23 15:43:48.741',225,19),
-
--- 7
-(7,7,'2024-04-23 18:47:13.833+00','2024-04-23 15:47:13.833',227,22),
-
--- 8
-(8,8,'2024-04-29 15:21:35.808+00','2024-04-29 12:21:35.808',191,14),
-
--- 9
-(9,9,'2024-05-08 23:22:59.958+00','2024-05-08 20:22:59.958',127,31),
-
--- 10
-(10,10,'2024-05-17 18:12:34.933+00','2024-05-17 15:12:34.933',221,38),
-
--- 11
-(11,11,'2024-05-23 23:25:44.966+00','2024-05-23 20:25:44.966',193,11),
-
--- 12
-(12,12,'2024-06-12 04:36:15.166+00','2024-06-12 01:36:15.166',134,0),
-
--- 13
-(13,13,'2024-07-10 05:14:42.375+00','2024-07-10 02:14:42.375',213,2),
-
--- 14
-(14,14,'2024-08-24 20:39:52.025+00','2024-08-24 17:39:52.025',48,0),
-
--- 15
-(15,15,'2024-09-05 14:24:27.883+00','2024-09-05 11:24:27.883',60,0),
-
--- 16 (dia anterior)
-(16,16,'2024-09-15 00:57:46.433+00','2024-09-14 21:57:46.433',223,-1),
-
--- 17 (dia anterior)
-(17,17,'2024-09-15 00:58:14.250+00','2024-09-14 21:58:14.250',168,-1),
-
--- 18
-(18,18,'2024-09-21 21:54:59.283+00','2024-09-21 18:54:59.283',216,2),
-
--- 19
-(19,19,'2024-09-24 19:47:05.341+00','2024-09-24 16:47:05.341',118,NULL),
-
--- 20
-(20,20,'2024-09-27 03:29:20.325+00','2024-09-27 00:29:20.325',46,-1),
-
--- 21
-(21,21,'2024-09-27 15:22:05.850+00','2024-09-27 12:22:05.850',78,0),
-
--- 22
-(22,22,'2024-09-29 04:22:08.183+00','2024-09-29 01:22:08.183',96,0),
-
--- 23
-(23,23,'2024-10-12 19:16:08.408+00','2024-10-12 16:16:08.408',5,-2),
-
--- 24
-(24,24,'2024-10-24 21:33:51.300+00','2024-10-24 18:33:51.300',204,1),
-
--- 25
-(25,25,'2024-10-26 16:21:22.166+00','2024-10-26 13:21:22.166',529,0),
-
--- 26
-(26,26,'2024-11-03 07:46:15.250+00','2024-11-03 04:46:15.250',183,0),
-
--- 27
-(27,27,'2024-12-02 18:51:25.608+00','2024-12-02 15:51:25.608',162,1),
-
--- 28
-(28,28,'2024-12-09 21:28:37.466+00','2024-12-09 18:28:37.466',199,5),
-
--- 29
-(29,29,'2025-02-06 18:51:12.733+00','2025-02-06 15:51:12.733',92,6),
-
--- 30
-(30,30,'2025-02-10 20:50:09.133+00','2025-02-10 17:50:09.133',96,5),
-
--- 31
-(31,31,'2025-03-05 20:35:37.741+00','2025-03-05 17:35:37.741',191,25),
-
--- 32
-(32,32,'2025-03-13 17:55:01.991+00','2025-03-13 14:55:01.991',146,3),
-
--- 33
-(33,33,'2025-03-13 23:10:35.206+00','2025-03-13 20:10:35.206',NULL,NULL),
-
--- 34
-(34,34,'2025-03-13 23:13:44.973+00','2025-03-13 20:13:44.973',NULL,NULL),
-
--- 35
-(35,35,'2025-03-13 23:32:53.537+00','2025-03-13 20:32:53.537',NULL,NULL),
-
--- 36
-(36,36,'2025-03-13 07:19:13.508+00','2025-03-13 04:19:13.508',NULL,NULL),
-
--- 37 (dia anterior)
-(37,37,'2025-03-14 00:56:38.527+00','2025-03-13 21:56:38.527',NULL,NULL),
-
--- 38 (dia anterior)
-(38,38,'2025-03-14 01:42:51.074+00','2025-03-13 22:42:51.074',NULL,NULL),
-
--- 39 (dia anterior)
-(39,39,'2025-03-14 01:50:52.354+00','2025-03-13 22:50:52.354',NULL,NULL),
-
--- 40 (dia anterior)
-(40,40,'2025-03-14 02:16:06.220+00','2025-03-13 23:16:06.220',NULL,NULL),
-
--- 41
-(41,41,'2025-03-14 21:37:23.384+00','2025-03-14 18:37:23.384',NULL,NULL),
-
--- 42
-(42,42,'2025-03-18 22:45:08.125+00','2025-03-18 19:45:08.125',114,16),
-
--- 43
-(43,43,'2025-03-18 22:45:08.116+00','2025-03-18 19:45:08.116',NULL,NULL),
-
--- 44
-(44,44,'2025-03-27 21:47:56.187+00','2025-03-27 18:47:56.187',NULL,NULL),
-
--- 45
-(45,45,'2025-03-30 13:51:08.639+00','2025-03-30 10:51:08.639',NULL,NULL),
-
--- 46
-(46,46,'2025-04-03 19:44:35.486+00','2025-04-03 16:44:35.486',NULL,NULL),
-
--- 47
-(47,47,'2025-04-14 10:35:59.908+00','2025-04-14 07:35:59.908',115,4),
-
--- 48
-(48,48,'2025-04-14 10:35:59.908+00','2025-04-14 07:35:59.908',154,NULL),
-
--- 49
-(49,49,'2025-04-14 10:37:47.058+00','2025-04-14 07:37:47.058',165,7),
-
--- 50
-(50,50,'2025-04-14 10:37:47.058+00','2025-04-14 07:37:47.058',NULL,NULL),
-
--- 51 (dia anterior)
-(51,51,'2025-04-20 00:10:33.822+00','2025-04-19 21:10:33.822',15,7),
-
--- 52 (dia anterior)
-(52,52,'2025-04-20 00:10:33.822+00','2025-04-19 21:10:33.822',215,8),
-
--- 53
-(53,53,'2025-05-03 12:03:24.816+00','2025-05-03 09:03:24.816',21,6),
-
--- 54
-(54,54,'2025-05-03 12:03:24.816+00','2025-05-03 09:03:24.816',262,7),
-
--- 55
-(55,55,'2025-07-27 20:06:40.675+00','2025-07-27 17:06:40.675',72,3),
-
--- 56
-(56,56,'2025-08-13 15:58:30.950+00','2025-08-13 12:58:30.950',52,NULL),
-
--- 57
-(57,57,'2025-08-20 04:03:34.387+00','2025-08-20 01:03:34.387',NULL,NULL),
-
--- 58
-(58,58,'2025-08-31 04:03:34.557+00','2025-08-31 01:03:34.557',NULL,NULL),
-
--- 59
-(59,59,'2025-09-21 09:26:47.083+00','2025-09-21 06:26:47.083',NULL,2),
-
--- 60
-(60,60,'2025-09-22 07:05:23.700+00','2025-09-22 04:05:23.700',NULL,NULL),
-
--- 61
-(61,61,'2025-10-04 13:58:08.900+00','2025-10-04 10:58:08.900',NULL,NULL),
-
--- 62
-(62,62,'2025-10-12 19:53:46.900+00','2025-10-12 16:53:46.900',NULL,NULL),
-
--- 63
-(63,63,'2025-10-14 18:59:01.485+00','2025-10-14 15:59:01.485',NULL,NULL),
-
--- 64
-(64,64,'2025-10-14 03:23:30.430+00','2025-10-14 00:23:40.430',NULL,NULL),
-
--- 65
-(65,65,'2025-10-14 03:27:50.069+00','2025-10-14 00:27:50.069',NULL,NULL),
-
--- 66
-(66,66,'2025-10-31 07:43:59.725+00','2025-10-31 04:43:59.725',180,1),
-
--- 67
-(67,67,'2025-10-31 16:24:18.516+00','2025-10-31 13:24:18.516',NULL,NULL),
-
--- 68
-(68,68,'2025-11-06 16:37:47.025+00','2025-11-06 13:37:47.025',NULL,NULL),
-
--- 69
-(69,69,'2025-11-11 18:37:32.275+00','2025-11-11 15:37:32.275',NULL,NULL),
-
--- 70
-(70,70,'2025-11-12 11:06:14.641+00','2025-11-12 08:06:14.641',NULL,NULL),
-
--- 71
-(71,71,'2025-12-10 18:00:34.203+00','2025-12-10 15:00:34.203',NULL,NULL),
-
--- 72
-(72,72,'2025-12-10 13:38:43.320+00','2025-12-10 10:38:43.320',NULL,NULL),
-
--- 73
-(73,73,'2025-12-10 13:38:53.311+00','2025-12-10 13:38:53.311',NULL,NULL),
-
--- 74
-(74,74,'2025-12-10 14:10:15.000+00','2025-12-10 11:10:15.000',NULL,NULL),
-
--- 75
-(75,75,'2025-12-29 14:10:19.000+00','2025-12-29 11:10:19.000',NULL,NULL),
-
--- 76
-(76,76,'2026-01-03 17:52:19.241+00','2026-01-03 14:52:19.241',NULL,NULL),
-
--- 77
-(77,77,'2026-01-08 11:21:53.097+00','2026-01-08 08:21:53.097',NULL,NULL),
-
--- 78
-(78,78,'2026-01-10 19:19:08.076+00','2026-01-10 16:19:08.076',NULL,NULL),
-
--- 79
-(79,79,'2026-01-10 14:54:03.141+00','2026-01-10 11:54:03.141',NULL,NULL),
-
--- 80
-(80,80,'2026-01-11 16:02:46.344+00','2026-01-11 13:02:46.344',NULL,NULL),
-
--- 81
-(81,81,'2026-01-11 05:25:29.575+00','2026-01-11 02:25:29.575',NULL,NULL),
-
--- 82
-(82,82,'2026-01-15 08:14:35.566+00','2026-01-15 05:14:35.566',NULL,NULL),
-
--- 83
-(83,83,'2026-01-19 08:14:35.764+00','2026-01-19 05:14:35.764',NULL,NULL),
-
--- 84
-(84,84,'2026-01-30 16:51:59.991+00','2026-01-30 13:51:59.991',NULL,NULL),
-
--- 85
-(85,85,'2026-02-01 19:37:00.958+00','2026-02-01 16:37:00.958',NULL,NULL),
-
--- 86
-(86,86,'2026-02-08 07:28:08.291+00','2026-02-08 04:28:08.291',NULL,NULL),
-
--- 87
-(87,87,'2026-02-10 14:18:34.083+00','2026-02-10 11:18:34.083',NULL,NULL),
-
--- 88 (dia anterior)
-(88,88,'2026-02-10 02:42:33.025+00','2026-02-09 23:42:33.025',NULL,NULL),
-
--- 89
-(89,89,'2026-02-10 20:12:51.816+00','2026-02-10 17:12:51.816',NULL,NULL);
---
--- Data for Name: evento_og; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO public.evento_og VALUES (1, '📂', 2);
-INSERT INTO public.evento_og VALUES (2, '📂', 5);
-INSERT INTO public.evento_og VALUES (3, '📂', 6);
-INSERT INTO public.evento_og VALUES (4, '📂', 7);
-INSERT INTO public.evento_og VALUES (5, '📂', 8);
-INSERT INTO public.evento_og VALUES (6, '📂', 9);
-INSERT INTO public.evento_og VALUES (7, '📂', 19);
-INSERT INTO public.evento_og VALUES (8, '📂', 23);
-INSERT INTO public.evento_og VALUES (9, '📂', 25);
-INSERT INTO public.evento_og VALUES (10, '📂', 33);
-INSERT INTO public.evento_og VALUES (11, '📂', 34);
-INSERT INTO public.evento_og VALUES (12, '📂', 35);
-INSERT INTO public.evento_og VALUES (13, '📂', 36);
-INSERT INTO public.evento_og VALUES (14, '📂', 37);
-INSERT INTO public.evento_og VALUES (15, '📂', 38);
-INSERT INTO public.evento_og VALUES (16, '📂', 39);
-INSERT INTO public.evento_og VALUES (17, '📂', 40);
-INSERT INTO public.evento_og VALUES (18, '📂', 41);
-INSERT INTO public.evento_og VALUES (19, '📂', 43);
-INSERT INTO public.evento_og VALUES (20, '📂', 44);
-INSERT INTO public.evento_og VALUES (21, '📂', 45);
-INSERT INTO public.evento_og VALUES (22, '📂', 47);
-INSERT INTO public.evento_og VALUES (23, '📂', 49);
-INSERT INTO public.evento_og VALUES (24, '📂', 54);
-INSERT INTO public.evento_og VALUES (25, '📂', 57);
-INSERT INTO public.evento_og VALUES (26, '📂', 59);
-INSERT INTO public.evento_og VALUES (27, '📂', 60);
-INSERT INTO public.evento_og VALUES (28, '📂', 61);
-INSERT INTO public.evento_og VALUES (29, '📂', 67);
-INSERT INTO public.evento_og VALUES (30, '📂', 68);
-INSERT INTO public.evento_og VALUES (31, '📂', 69);
-INSERT INTO public.evento_og VALUES (32, '📂', 70);
-INSERT INTO public.evento_og VALUES (33, '📂', 71);
-INSERT INTO public.evento_og VALUES (34, '📂', 73);
-INSERT INTO public.evento_og VALUES (35, '📂', 74);
-INSERT INTO public.evento_og VALUES (36, '📂', 75);
-INSERT INTO public.evento_og VALUES (37, '📂', 76);
-INSERT INTO public.evento_og VALUES (38, '📂', 85);
-INSERT INTO public.evento_og VALUES (39, '📂', 86);
-INSERT INTO public.evento_og VALUES (40, '📂', 87);
-INSERT INTO public.evento_og VALUES (41, '📂', 89);
-
-
---
--- Data for Name: evento_sp; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-
-
---
--- Name: area_id_area_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.area_id_area_seq', 1, true);
-
-
---
--- Name: evento_cf_id_evento_cf_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.evento_cf_id_evento_cf_seq', 89, true);
-
-
---
--- Name: evento_id_evento_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.evento_id_evento_seq', 89, true);
-
-
---
--- Name: evento_og_id_evento_og_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.evento_og_id_evento_og_seq', 41, true);
-
-
---
--- Name: evento_sp_id_evento_sp_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.evento_sp_id_evento_sp_seq', 1, false);
-
-
---
--- Name: localizacao_id_localizacao_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.localizacao_id_localizacao_seq', 1, true);
-
-
---
--- Name: terminal_id_terminal_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.terminal_id_terminal_seq', 3, true);
-
-
---
--- Name: unidade_federativa_id_unidade_federativa_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.unidade_federativa_id_unidade_federativa_seq', 1, true);
-
-
---
--- PostgreSQL database dump complete
---
+-- =============================================================================
+-- Carga inicial: 128 eventos extraídos de Eventos/eventos_xlsx.xlsx
+-- Gerado por _extract.py (one-shot). Roda APÓS Schema/schema.sql.
+-- =============================================================================
+
+BEGIN;
+
+-- 1. Placeholders mínimos (1 area + 1 UF + 1 localizacao + 1 terminal por agente).
+--    Refinar depois com dados reais (lat/lon, UF, área, tensão_base).
+INSERT INTO area (id_area, nm_area, acr_area) VALUES
+    (1, 'A_DEFINIR_BMTE',   'AD1'),
+    (2, 'A_DEFINIR_XRTE',   'AD2'),
+    (3, 'A_DEFINIR_FURNAS', 'AD3');
+
+INSERT INTO unidade_federativa (id_unidade_federativa, nm_unidade_federativa, acr_unidade_federativa, id_area) VALUES
+    (1, 'A_DEFINIR', 'AD', 1),
+    (2, 'A_DEFINIR', 'AD', 2),
+    (3, 'A_DEFINIR', 'AD', 3);
+
+INSERT INTO localizacao (id_localizacao, latitude, longitude, id_unidade_federativa) VALUES
+    (1, NULL, NULL, 1),
+    (2, NULL, NULL, 2),
+    (3, NULL, NULL, 3);
+
+INSERT INTO terminal (id_terminal, agente, id_localizacao, nm_terminal, acr_terminal) VALUES
+    (1, 'BMTE',   1, 'Terminal BMTE',   'BMTE'),
+    (2, 'XRTE',   2, 'Terminal XRTE',   'XRTE'),
+    (3, 'FURNAS', 3, 'Terminal FURNAS', 'FURNAS');
+
+-- 2. evento (128 linhas) — tipo_gatilho = CFTM para todas.
+INSERT INTO evento (id_evento, tipo_gatilho, id_terminal, id_evento_validado) VALUES
+    (  1, 'CFTM', 1, NULL),
+    (  2, 'CFTM', 1, NULL),
+    (  3, 'CFTM', 1, NULL),
+    (  4, 'CFTM', 1, NULL),
+    (  5, 'CFTM', 1, NULL),
+    (  6, 'CFTM', 1, NULL),
+    (  7, 'CFTM', 1, NULL),
+    (  8, 'CFTM', 1, NULL),
+    (  9, 'CFTM', 1, NULL),
+    ( 10, 'CFTM', 1, NULL),
+    ( 11, 'CFTM', 1, NULL),
+    ( 12, 'CFTM', 1, NULL),
+    ( 13, 'CFTM', 1, NULL),
+    ( 14, 'CFTM', 1, NULL),
+    ( 15, 'CFTM', 1, NULL),
+    ( 16, 'CFTM', 1, NULL),
+    ( 17, 'CFTM', 1, NULL),
+    ( 18, 'CFTM', 1, NULL),
+    ( 19, 'CFTM', 1, NULL),
+    ( 20, 'CFTM', 1, NULL),
+    ( 21, 'CFTM', 1, NULL),
+    ( 22, 'CFTM', 1, NULL),
+    ( 23, 'CFTM', 1, NULL),
+    ( 24, 'CFTM', 1, NULL),
+    ( 25, 'CFTM', 1, NULL),
+    ( 26, 'CFTM', 1, NULL),
+    ( 27, 'CFTM', 1, NULL),
+    ( 28, 'CFTM', 1, NULL),
+    ( 29, 'CFTM', 1, NULL),
+    ( 30, 'CFTM', 1, NULL),
+    ( 31, 'CFTM', 1, NULL),
+    ( 32, 'CFTM', 1, NULL),
+    ( 33, 'CFTM', 2, NULL),
+    ( 34, 'CFTM', 2, NULL),
+    ( 35, 'CFTM', 2, NULL),
+    ( 36, 'CFTM', 2, NULL),
+    ( 37, 'CFTM', 2, NULL),
+    ( 38, 'CFTM', 2, NULL),
+    ( 39, 'CFTM', 2, NULL),
+    ( 40, 'CFTM', 2, NULL),
+    ( 41, 'CFTM', 2, NULL),
+    ( 42, 'CFTM', 1, NULL),
+    ( 43, 'CFTM', 2, NULL),
+    ( 44, 'CFTM', 2, NULL),
+    ( 45, 'CFTM', 2, NULL),
+    ( 46, 'CFTM', 2, NULL),
+    ( 47, 'CFTM', 1, NULL),
+    ( 48, 'CFTM', 2, NULL),
+    ( 49, 'CFTM', 1, NULL),
+    ( 50, 'CFTM', 2, NULL),
+    ( 51, 'CFTM', 1, NULL),
+    ( 52, 'CFTM', 2, NULL),
+    ( 53, 'CFTM', 1, NULL),
+    ( 54, 'CFTM', 2, NULL),
+    ( 55, 'CFTM', 1, NULL),
+    ( 56, 'CFTM', 1, NULL),
+    ( 57, 'CFTM', 2, NULL),
+    ( 58, 'CFTM', 2, NULL),
+    ( 59, 'CFTM', 1, NULL),
+    ( 60, 'CFTM', 1, NULL),
+    ( 61, 'CFTM', 2, NULL),
+    ( 62, 'CFTM', 1, NULL),
+    ( 63, 'CFTM', 3, NULL),
+    ( 64, 'CFTM', 3, NULL),
+    ( 65, 'CFTM', 3, NULL),
+    ( 66, 'CFTM', 1, NULL),
+    ( 67, 'CFTM', 3, NULL),
+    ( 68, 'CFTM', 3, NULL),
+    ( 69, 'CFTM', 3, NULL),
+    ( 70, 'CFTM', 3, NULL),
+    ( 71, 'CFTM', 1, NULL),
+    ( 72, 'CFTM', 1, NULL),
+    ( 73, 'CFTM', 1, NULL),
+    ( 74, 'CFTM', 3, NULL),
+    ( 75, 'CFTM', 3, NULL),
+    ( 76, 'CFTM', 3, NULL),
+    ( 77, 'CFTM', 3, NULL),
+    ( 78, 'CFTM', 1, NULL),
+    ( 79, 'CFTM', 3, NULL),
+    ( 80, 'CFTM', 3, NULL),
+    ( 81, 'CFTM', 3, NULL),
+    ( 82, 'CFTM', 3, NULL),
+    ( 83, 'CFTM', 3, NULL),
+    ( 84, 'CFTM', 1, NULL),
+    ( 85, 'CFTM', 3, NULL),
+    ( 86, 'CFTM', 3, NULL),
+    ( 87, 'CFTM', 3, NULL),
+    ( 88, 'CFTM', 3, NULL),
+    ( 89, 'CFTM', 1, NULL),
+    ( 90, 'CFTM', 1, NULL),
+    ( 91, 'CFTM', 3, NULL),
+    ( 92, 'CFTM', 1, NULL),
+    ( 93, 'CFTM', 3, NULL),
+    ( 94, 'CFTM', 3, NULL),
+    ( 95, 'CFTM', 1, NULL),
+    ( 96, 'CFTM', 3, NULL),
+    ( 97, 'CFTM', 3, NULL),
+    ( 98, 'CFTM', 1, NULL),
+    ( 99, 'CFTM', 1, NULL),
+    (100, 'CFTM', 1, NULL),
+    (101, 'CFTM', 1, NULL),
+    (102, 'CFTM', 3, NULL),
+    (103, 'CFTM', 1, NULL),
+    (104, 'CFTM', 1, NULL),
+    (105, 'CFTM', 1, NULL),
+    (106, 'CFTM', 2, NULL),
+    (107, 'CFTM', 3, NULL),
+    (108, 'CFTM', 3, NULL),
+    (109, 'CFTM', 3, NULL),
+    (110, 'CFTM', 1, NULL),
+    (111, 'CFTM', 2, NULL),
+    (112, 'CFTM', 2, NULL),
+    (113, 'CFTM', 1, NULL),
+    (114, 'CFTM', 2, NULL),
+    (115, 'CFTM', 1, NULL),
+    (116, 'CFTM', 2, NULL),
+    (117, 'CFTM', 1, NULL),
+    (118, 'CFTM', 2, NULL),
+    (119, 'CFTM', 1, NULL),
+    (120, 'CFTM', 2, NULL),
+    (121, 'CFTM', 1, NULL),
+    (122, 'CFTM', 2, NULL),
+    (123, 'CFTM', 2, NULL),
+    (124, 'CFTM', 1, NULL),
+    (125, 'CFTM', 2, NULL),
+    (126, 'CFTM', 3, NULL),
+    (127, 'CFTM', 2, NULL),
+    (128, 'CFTM', 2, NULL);
+
+-- 3. id_evento_validado: 12 pares observados por dois terminais (mesma ocorrência).
+UPDATE evento SET id_evento_validado = 42 WHERE id_evento IN (42, 43);
+UPDATE evento SET id_evento_validado = 51 WHERE id_evento IN (51, 52);
+UPDATE evento SET id_evento_validado = 53 WHERE id_evento IN (53, 54);
+UPDATE evento SET id_evento_validado = 57 WHERE id_evento IN (57, 58);
+UPDATE evento SET id_evento_validado = 90 WHERE id_evento IN (90, 91);
+UPDATE evento SET id_evento_validado = 105 WHERE id_evento IN (105, 106);
+UPDATE evento SET id_evento_validado = 117 WHERE id_evento IN (117, 118);
+UPDATE evento SET id_evento_validado = 119 WHERE id_evento IN (119, 120);
+UPDATE evento SET id_evento_validado = 121 WHERE id_evento IN (121, 122);
+UPDATE evento SET id_evento_validado = 110 WHERE id_evento IN (110, 111);
+UPDATE evento SET id_evento_validado = 113 WHERE id_evento IN (113, 114);
+UPDATE evento SET id_evento_validado = 115 WHERE id_evento IN (115, 116);
+
+-- 4. evento_cf (128 linhas) — timestamps, links e ISSs.
+INSERT INTO evento_cf (id_evento, inicio_evento_utc, inicio_evento_bsb, link_folder_sp, link_folder_og, isss_tr, isss_delta_theta_max) VALUES
+    (  1, '2024-02-29 18:47:05.416+00', '2024-02-29 15:47:05.416', 'https://1drv.ms/f/c/12835ef84d0df865/Ehc8n-pVwThBs40VapjvJFYBjy4x-uDvXDVZbs1SbrKMXg?e=mkNfYH', NULL, NULL, NULL),
+    (  2, '2024-03-06 20:59:48.708+00', '2024-03-06 17:59:48.708', 'https://1drv.ms/f/c/12835ef84d0df865/EhFXbMLEvAhKpQwd2yVSogIBhQvxtkYwSOj6aiWJosDhDg?e=0f2Seg', 'https://1drv.ms/f/c/12835ef84d0df865/Ej6E2ZKFe79PoH0UhA9e8A4ByjhJlLnLDpgrGX1vntaUnA?e=mWZVPg', 127.0, 13.82),
+    (  3, '2024-03-15 04:12:34.716+00', '2024-03-15 01:12:34.716', 'https://1drv.ms/f/c/12835ef84d0df865/EizvOe8J-KBNhxEjylvLRxcBTfdLbszBjvbF6bzQL2mV8g?e=B4eYvl', NULL, 164.0, 5.23),
+    (  4, '2024-03-16 19:53:27.641+00', '2024-03-16 16:53:27.641', 'https://1drv.ms/f/c/12835ef84d0df865/Et_VZBpB_KhOnlEikE2A8MMBjSAyk2Pbr2jAiXxhmWdLXQ?e=ifj9Qj', NULL, 114.0, 14.19),
+    (  5, '2024-04-07 23:27:49.958+00', '2024-04-07 20:27:49.958', 'https://1drv.ms/f/c/12835ef84d0df865/EuCC3JNqSv5KheOofO401z0BwLUs7ayyGRpMULSdDTnonQ?e=BD57LY', 'https://1drv.ms/f/c/12835ef84d0df865/ErP8jIBG00tFsw0Lmo92cmUBdTF4c_-iPu7xX5l_vSzlvA?e=dB7vS5', 204.0, 15.44),
+    (  6, '2024-04-23 18:43:48.741+00', '2024-04-23 15:43:48.741', 'https://1drv.ms/f/c/12835ef84d0df865/EuCQZJZnJUtNq9RTteaYS1ABxxYgCz0l0OKzyMBHWcBYBQ?e=op5XsH', 'https://1drv.ms/f/c/12835ef84d0df865/ErGpoLqkATdJrPJ4_qyEHX0BoTyVigBEvq9RO7d541b-Vg?e=Y4e5ss', 225.0, 19.11),
+    (  7, '2024-04-23 18:47:13.833+00', '2024-04-23 15:47:13.833', 'https://1drv.ms/f/c/12835ef84d0df865/EuCQZJZnJUtNq9RTteaYS1ABxxYgCz0l0OKzyMBHWcBYBQ?e=op5XsH', 'https://1drv.ms/f/c/12835ef84d0df865/ErGpoLqkATdJrPJ4_qyEHX0BoTyVigBEvq9RO7d541b-Vg?e=Y4e5ss', 227.0, 22.38),
+    (  8, '2024-04-29 15:21:35.808+00', '2024-04-29 12:21:35.808', 'https://1drv.ms/f/c/12835ef84d0df865/ElAOf3oui6hOns1bU5hVFQYB-hbmf8MNncvVGIABpIm4ug?e=u7eaSF', 'https://1drv.ms/f/c/12835ef84d0df865/ErW14tB85c1DsekSJPKJGdoBuTWm5n-qe4-i7lY77E4s3w?e=8MiIIC', 191.0, 14.51),
+    (  9, '2024-05-08 23:22:59.958+00', '2024-05-08 20:22:59.958', 'https://1drv.ms/f/c/12835ef84d0df865/EkUtpAz8TvpCne7fPtZttk8BARUX9x7Sw1l3iGhDD7IXZQ?e=CQ6hii', 'https://1drv.ms/f/c/12835ef84d0df865/EoomF4IDvKdJqVyc9rmioCUByqsW2rzGjdEshmyxDGgBzQ?e=GhIJFX', 127.0, 31.38),
+    ( 10, '2024-05-17 18:12:34.933+00', '2024-05-17 15:12:34.933', 'https://1drv.ms/f/c/12835ef84d0df865/EvVaZrO8yFJAnNnSye3--ocBE3WnARgApaKxp_SXUu7ePQ?e=tPy09O', NULL, 221.0, 38.59),
+    ( 11, '2024-05-23 23:25:44.966+00', '2024-05-23 20:25:44.966', 'https://1drv.ms/f/c/12835ef84d0df865/EpCFHG_UVKZCjbFR2MuEgZ8BGSQRGfZ77KmtjK8mje4CDQ?e=K1B2GQ', NULL, 193.0, 11.98),
+    ( 12, '2024-06-12 04:36:15.166+00', '2024-06-12 01:36:15.166', 'https://1drv.ms/f/c/12835ef84d0df865/EhCFM4h6qlhCjCfsLXIoYosB2NLJY-q1z7JPpcXbljjg-A?e=2sCSDI', NULL, 134.0, 0.511),
+    ( 13, '2024-07-10 05:14:42.375+00', '2024-07-10 02:14:42.375', 'https://1drv.ms/f/c/12835ef84d0df865/Epg9OQnEuv5LlP14Y3JroPUB_h9KP3bV2srRYWj7ejquFQ?e=OigMw6', NULL, 213.0, 2.24),
+    ( 14, '2024-08-24 20:39:52.025+00', '2024-08-24 17:39:52.025', 'https://1drv.ms/f/c/12835ef84d0df865/ErR94soP9YZKgeUeqK0EgqEBfeA_XSWZ7X0kBmkPmM-V3w?e=S6MOAC', NULL, 48.0, 0.598),
+    ( 15, '2024-09-05 14:24:27.883+00', '2024-09-05 11:24:27.883', 'https://1drv.ms/f/c/12835ef84d0df865/Et-YUb29iEFHhCVeI9xiovkBKVQbQnA7K0gxGOs-7pDl8w?e=8hQRVY', NULL, 60.0, -0.915),
+    ( 16, '2024-09-15 00:57:46.433+00', '2024-09-14 21:57:46.433', 'https://1drv.ms/f/c/12835ef84d0df865/ElyArzVlt_BJqouStFuytNcBdfjtL42Pli29yyJofFUIZA?e=uUxAWc', NULL, 223.0, -1.244),
+    ( 17, '2024-09-15 00:58:14.250+00', '2024-09-14 21:58:14.250', 'https://1drv.ms/f/c/12835ef84d0df865/ElyArzVlt_BJqouStFuytNcBdfjtL42Pli29yyJofFUIZA?e=uUxAWc', NULL, 168.0, -1.551),
+    ( 18, '2024-09-21 21:54:59.283+00', '2024-09-21 18:54:59.283', 'https://1drv.ms/f/c/12835ef84d0df865/EkqyM2N9v95IvVPbrSLbut8Bl5R5n6jUTyoGNoLcTMnMXw?e=5fIZkH', NULL, 216.0, 2.84),
+    ( 19, '2024-09-24 19:47:05.341+00', '2024-09-24 16:47:05.341', 'https://1drv.ms/f/c/12835ef84d0df865/EmYo2EwBz2FIrvwFh7xflZEBwXF2TC5eEQy8jpoR8fJ5Yg?e=SUsnXl', 'https://1drv.ms/f/c/12835ef84d0df865/Etbnq8tHFwVDtkcBUIBtIcEBCPnhgLzDUTnJm73YBAuRCg?e=auXnwR', 118.0, NULL),
+    ( 20, '2024-09-27 03:29:20.325+00', '2024-09-27 00:29:20.325', 'https://1drv.ms/f/c/12835ef84d0df865/EgwmuIYVBiFAoqydEKTh-noBeiUAMDvPxXOz--gSzW4FvQ?e=2hbjP0', NULL, 46.0, -1.318),
+    ( 21, '2024-09-27 15:22:05.850+00', '2024-09-27 12:22:05.850', 'https://1drv.ms/f/c/12835ef84d0df865/EgwmuIYVBiFAoqydEKTh-noBeiUAMDvPxXOz--gSzW4FvQ?e=2hbjP0', NULL, 78.0, 0.45),
+    ( 22, '2024-09-29 04:22:08.183+00', '2024-09-29 01:22:08.183', 'https://1drv.ms/f/c/12835ef84d0df865/EnEeY6xQWf5GjOiOubWBjkUBL0Rsa4IqhgFZbTe_vvrTaw?e=dR8TwR', NULL, 96.0, 0.414),
+    ( 23, '2024-10-12 19:16:08.408+00', '2024-10-12 16:16:08.408', 'https://1drv.ms/f/c/12835ef84d0df865/EqXX9nmx-qhEvaFZb8PFaqEBG1u7F9mCijzJeaxWdbLzQw?e=mY3dG9', 'https://1drv.ms/f/c/12835ef84d0df865/EtrgBDQeuP9NrQDfjql9hMsBeTBJT0wVvtCHta-5b_sbOQ?e=PNEFoI', 5.0, -2.329),
+    ( 24, '2024-10-24 21:33:51.300+00', '2024-10-24 18:33:51.300', 'https://1drv.ms/f/c/12835ef84d0df865/EgNKOnjjanFHt59THfZyZLABSao8ilYsF8ZZHX0VKaPPpw?e=1ggQI3', NULL, 204.0, 1.08),
+    ( 25, '2024-10-26 16:21:22.166+00', '2024-10-26 13:21:22.166', 'https://1drv.ms/f/c/12835ef84d0df865/EvL7TMc8UlJIurPhSm-oSbIBt-pk7li6myEsYcGucG4BUQ?e=fRPEFC', 'https://1drv.ms/f/c/12835ef84d0df865/EuxMcVhEJ-ZJh0FL5M59PhMBTZP4I6dfDZnb3m7KK6_sDA?e=AeyNy2', 529.0, 0.237),
+    ( 26, '2024-11-03 07:46:15.250+00', '2024-11-03 04:46:15.250', 'https://1drv.ms/f/c/12835ef84d0df865/EqkQUn5WxPtIv1hRXIf9AmYBvpeDGbysk2GxSLLwBa54-w?e=QcJ4uq', NULL, 183.0, 0.64),
+    ( 27, '2024-12-02 18:51:25.608+00', '2024-12-02 15:51:25.608', 'https://1drv.ms/f/c/12835ef84d0df865/Ev1x202ShKpErTWO9NYgYMEBds2B0bZQngc8mI9q4-awow?e=Jsw7W1', NULL, 162.0, 1.886),
+    ( 28, '2024-12-09 21:28:37.466+00', '2024-12-09 18:28:37.466', 'https://1drv.ms/f/c/12835ef84d0df865/EkEJdU9Q1PFEm24DwCqw0hcB4uHq3V1N8rgbiwcsOj0bnA?e=rTQy3C', NULL, 199.0, 5.36),
+    ( 29, '2025-02-06 18:51:12.733+00', '2025-02-06 15:51:12.733', 'https://1drv.ms/f/c/12835ef84d0df865/Ekx-E4MhFhNNtxmLEgBxWv0BlqMw-DTaW6PJ5eZ-7MQ_KQ?e=yQ1sVV', NULL, 92.0, 6.66),
+    ( 30, '2025-02-10 20:50:09.133+00', '2025-02-10 17:50:09.133', 'https://1drv.ms/f/c/12835ef84d0df865/EqcEhmIYFxxFiVC1IBWtmTIBLPvQk9qnNbT61rXKCaX8hQ?e=jWzdHI', NULL, 96.0, 5.14),
+    ( 31, '2025-03-05 20:35:37.741+00', '2025-03-05 17:35:37.741', 'https://1drv.ms/f/c/12835ef84d0df865/EvKrYdarmlJJu__5cFq0ywYBujKUzC-4U8rNRMe0L0LAfw?e=5Nohie', NULL, 191.0, 25.07),
+    ( 32, '2025-03-13 17:55:01.991+00', '2025-03-13 14:55:01.991', 'https://1drv.ms/f/c/12835ef84d0df865/IgCcm5EGBB8qQ77Sc3w6WfBdAX3wizmfmJ4kgHCqKBfi5rE?e=as2mbi', NULL, 146.0, 3.4),
+    ( 33, '2025-03-13 23:10:35.206+00', '2025-03-13 20:10:35.206', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/EvLoYK6eY9pFjGu2ESamRxABcFkS3EPpzCp3FWqSFxX2MQ?e=Pg228X', NULL, NULL),
+    ( 34, '2025-03-13 23:13:44.973+00', '2025-03-13 20:13:44.973', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/EvLoYK6eY9pFjGu2ESamRxABcFkS3EPpzCp3FWqSFxX2MQ?e=Pg228X', NULL, NULL),
+    ( 35, '2025-03-13 23:32:53.537+00', '2025-03-13 20:32:53.537', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/EvLoYK6eY9pFjGu2ESamRxABcFkS3EPpzCp3FWqSFxX2MQ?e=Pg228X', NULL, NULL),
+    ( 36, '2025-03-14 07:19:13.508+00', '2025-03-14 04:19:13.508', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/EoBZFgakWEtDhge5Zf3MDOgB_ESjEOAB3qdSr_72Gc05Zw?e=0WIHSs', NULL, NULL),
+    ( 37, '2025-03-14 00:56:38.527+00', '2025-03-13 21:56:38.527', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/EvLoYK6eY9pFjGu2ESamRxABcFkS3EPpzCp3FWqSFxX2MQ?e=Pg228X', NULL, NULL),
+    ( 38, '2025-03-14 01:42:51.074+00', '2025-03-13 22:42:51.074', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/EvLoYK6eY9pFjGu2ESamRxABcFkS3EPpzCp3FWqSFxX2MQ?e=Pg228X', NULL, NULL),
+    ( 39, '2025-03-14 01:50:52.354+00', '2025-03-13 22:50:52.354', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/EvLoYK6eY9pFjGu2ESamRxABcFkS3EPpzCp3FWqSFxX2MQ?e=Pg228X', NULL, NULL),
+    ( 40, '2025-03-14 02:16:06.220+00', '2025-03-13 23:16:06.220', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/EvLoYK6eY9pFjGu2ESamRxABcFkS3EPpzCp3FWqSFxX2MQ?e=Pg228X', NULL, NULL),
+    ( 41, '2025-03-18 21:37:23.384+00', '2025-03-18 18:37:23.384', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/EivHSiRHo8pDhBRwrGWGsOEB0BHI7XfL-yN-U02PO5_hNw?e=26emBx', NULL, NULL),
+    ( 42, '2025-03-18 22:45:08.125+00', '2025-03-18 19:45:08.125', 'https://1drv.ms/f/c/12835ef84d0df865/EhzObpTj-bREiGxuPi0UvOEB7MIkCC1CRS_9a_8f0Opk5Q?e=1nWROX', NULL, 114.0, 16.65),
+    ( 43, '2025-03-18 22:45:08.116+00', '2025-03-18 19:45:08.116', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/EivHSiRHo8pDhBRwrGWGsOEB0BHI7XfL-yN-U02PO5_hNw?e=26emBx', NULL, NULL),
+    ( 44, '2025-03-27 21:47:56.187+00', '2025-03-27 18:47:56.187', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/ElfwgZCIEUdDjy6e2YeSCqsB7OqoQIMIRSMB9c3GBT9oHA?e=s3Ih2H', NULL, NULL),
+    ( 45, '2025-03-30 13:51:08.639+00', '2025-03-30 10:51:08.639', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/EmML5khMD75EkyjtfV_9PR0BxSAamUXdsBOc3OuRER0R8Q?e=iZnHdz', NULL, NULL),
+    ( 46, '2025-04-03 19:44:35.486+00', '2025-04-03 16:44:35.486', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/Eno7Wcs6xytFtuXYvlxPd4YBQQ79vZg4Hc5r9m7-S7AsGA?e=qWZ0SM', NULL, NULL),
+    ( 47, '2025-04-14 10:35:59.908+00', '2025-04-14 07:35:59.908', 'https://1drv.ms/f/c/12835ef84d0df865/ElLQsWHiBppDrn-DUb5Z0WEBqTI2wMSi98oiIf9BWrIK2Q?e=IHS2HC', NULL, 115.0, 4.93),
+    ( 48, '2025-04-14 10:35:59.908+00', '2025-04-14 07:35:59.908', 'https://1drv.ms/f/c/12835ef84d0df865/Et4lTGvN8xBPnWW8hXxgg4cBbH6WNuIhPeG5YRHQ5BWtWw?e=hiB9n1', 'https://1drv.ms/f/c/12835ef84d0df865/Eh0NOOQIiYJPrP_jaeq2iCYBfvCuaJ6RuenSBWLvf7jfOg?e=jOXpWa', 154.0, NULL),
+    ( 49, '2025-04-14 10:37:47.058+00', '2025-04-14 07:37:47.058', 'https://1drv.ms/f/c/12835ef84d0df865/ElLQsWHiBppDrn-DUb5Z0WEBqTI2wMSi98oiIf9BWrIK2Q?e=IHS2HC', NULL, 165.0, 7.8),
+    ( 50, '2025-04-14 10:37:47.058+00', '2025-04-14 07:37:47.058', 'https://1drv.ms/f/c/12835ef84d0df865/Et4lTGvN8xBPnWW8hXxgg4cBbH6WNuIhPeG5YRHQ5BWtWw?e=hiB9n1', 'https://1drv.ms/f/c/12835ef84d0df865/Eh0NOOQIiYJPrP_jaeq2iCYBfvCuaJ6RuenSBWLvf7jfOg?e=jOXpWa', NULL, NULL),
+    ( 51, '2025-04-20 00:10:33.822+00', '2025-04-19 21:10:33.822', 'https://1drv.ms/u/c/12835ef84d0df865/EbCgk3tgXPVArwgtkasiw1YB0FLB9X8swsXrdPyMa9Iy9A?e=EjFGM0', NULL, 15.0, 7.5),
+    ( 52, '2025-04-20 00:10:33.822+00', '2025-04-19 21:10:33.822', 'https://1drv.ms/u/c/12835ef84d0df865/EX1gG0m2e9NMlEk7QcSxKLQBMjqTSZwdNc9obt6gxT28aQ?e=5YgyG5', 'https://1drv.ms/f/c/12835ef84d0df865/EhsKZrjqdflGrAcidt2pTuMBB-fny7Je3WktkfTSYJ45bg?e=OwSHlZ', 215.0, 8.4),
+    ( 53, '2025-05-03 12:03:24.816+00', '2025-05-03 09:03:24.816', 'https://1drv.ms/f/c/12835ef84d0df865/IgDHM6DRr8yOSpmF4gKT-a2oAVvs3BBUI1poqIrxbt0PiUA?e=eA1QT3', NULL, 21.0, 6.7),
+    ( 54, '2025-05-03 12:03:24.816+00', '2025-05-03 09:03:24.816', 'https://1drv.ms/f/c/12835ef84d0df865/IgBQUEHcuOXbQqLXcNws2APKAU9AEBbzl6SpW1Tm009rDMA?e=sOC44q', NULL, 262.0, 7.9),
+    ( 55, '2025-07-27 20:06:40.675+00', '2025-07-27 17:06:40.675', 'https://1drv.ms/f/c/12835ef84d0df865/EmCv3ermhvFMuo0oW26yzKEBfCRMQUXl7JbC1qypkHP6Ww?e=UydYWh', NULL, 72.0, 3.01),
+    ( 56, '2025-08-13 15:58:30.950+00', '2025-08-13 12:58:30.950', 'https://1drv.ms/f/c/12835ef84d0df865/EuPPTB2KV9pNgrLSCcfYDIMBCP5gT_NzJjtnWN9kr0wKAw?e=KEN9PO', NULL, 52.0, -0.3),
+    ( 57, '2025-08-20 04:03:34.387+00', '2025-08-20 01:03:34.387', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/EnW-wIkMzbdCvj3eBkX-g2sBkER0Nz2AJszjMYh5gOP5Sw?e=rzSuhf', NULL, NULL),
+    ( 58, '2025-08-20 04:03:34.557+00', '2025-08-20 01:03:34.557', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/EnW-wIkMzbdCvj3eBkX-g2sBkER0Nz2AJszjMYh5gOP5Sw?e=rzSuhf', NULL, NULL),
+    ( 59, '2025-08-31 09:26:47.083+00', '2025-08-31 06:26:47.083', 'https://1drv.ms/f/c/12835ef84d0df865/ErQ8bN_JXiVOqBU0d8GKXQYBdHedktmklo6XN7UfM0e24g?e=ICUk9l', NULL, 246.0, -2.1),
+    ( 60, '2025-09-21 07:05:23.700+00', '2025-09-21 04:05:23.700', 'https://1drv.ms/f/c/12835ef84d0df865/EiqEns9aXt5GsS9ntsAVyXQBczDnb7mGaqyTJqH3IBRtPQ?e=BPD9tT', NULL, 250.0, 0.71),
+    ( 61, '2025-09-22 13:58:08.900+00', '2025-09-22 10:58:08.900', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/Ejv5jrmH0lREuAYDGEcysDUBaZptLe192H0Vvzw2HbmEvg?e=XR1BSb', NULL, NULL),
+    ( 62, '2025-10-04 19:53:46.900+00', '2025-10-04 16:53:46.900', 'https://1drv.ms/f/c/12835ef84d0df865/Epdm_PSHDO9JiMjzYJI2-DQBaBF7RXButMF1YIFjS4i_7Q?e=0x3Tfe', NULL, NULL, -0.65),
+    ( 63, '2025-10-12 18:59:01.485+00', '2025-10-12 15:59:01.485', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgC8KLzXHvEkSr4wS7G5-VDTAaIIwWbFcygD_aPIJEaLT0M?e=D7aFki', NULL, NULL),
+    ( 64, '2025-10-14 03:23:30.430+00', '2025-10-14 00:23:40.430', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgB-sZD9l1f3T4OF2i1xuIz5AQW1gqIJf2A8VfucDtWTP-8?e=edcdSv', NULL, NULL),
+    ( 65, '2025-10-14 03:27:50.069+00', '2025-10-14 00:27:50.069', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgB-sZD9l1f3T4OF2i1xuIz5AQW1gqIJf2A8VfucDtWTP-8?e=edcdSv', NULL, NULL),
+    ( 66, '2025-10-14 07:43:59.725+00', '2025-10-14 04:43:59.725', 'https://1drv.ms/f/c/12835ef84d0df865/EspIJxWoRz1Motxwc7zXA_oBgQQ0WYvSYSbWCLkTlElteg?e=HTcxwW', NULL, 180.0, 1.21),
+    ( 67, '2025-10-16 22:27:22.830+00', '2025-10-16 19:27:22.830', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgDhC4wxWqTGSbW3dThOztaAAZ0CENUPbCBZTFFd9ZZX4cE?e=Evui8I', NULL, NULL),
+    ( 68, '2025-10-19 01:38:44.827+00', '2025-10-18 22:38:44.827', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgBki_m_03XkRoE9jCOnCzJXAaRyF05T4yzcDFWFU2HTzb4?e=vBDaDO', NULL, NULL),
+    ( 69, '2025-10-19 03:55:52.181+00', '2025-10-19 00:55:52.181', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgAisMh6ekhLTKj5B6rEby83AWNqCfzv0prXEPYHWW_njmI?e=ZiBTiW', NULL, NULL),
+    ( 70, '2025-10-28 08:18:19.750+00', '2025-10-28 05:18:19.750', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgCd8p5fAvSJQpQpMoR-tZeHAdlhk9OpAGN49Tndpji7kYg?e=Wg2Dob', NULL, NULL),
+    ( 71, '2025-10-31 16:24:18.516+00', '2025-10-31 13:24:18.516', 'https://1drv.ms/f/c/12835ef84d0df865/EuZQZl_jEMVKpL9ngv0zRmsB4MI5WbyS3dtci33DFGzhaw?e=myLyHk', NULL, 157.0, 1.5),
+    ( 72, '2025-10-31 16:37:47.025+00', '2025-10-31 13:37:47.025', 'https://1drv.ms/f/c/12835ef84d0df865/EuZQZl_jEMVKpL9ngv0zRmsB4MI5WbyS3dtci33DFGzhaw?e=myLyHk', NULL, 69.0, 0.22),
+    ( 73, '2025-11-06 18:37:32.275+00', '2025-11-06 15:37:32.275', 'https://1drv.ms/f/c/12835ef84d0df865/EjfjFFEC_kNGrEYYz4suuYwB7MpGsgrTpHA_pywZnuT4_w?e=IP9gug', NULL, NULL, -2.4),
+    ( 74, '2025-11-08 05:49:41.646+00', '2025-11-08 02:49:41.646', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgAyAj21-G8bSZ6lr3DlNCDoAZ6PCtCopokV4i9tqAaJBRE?e=DHiT0c', NULL, NULL),
+    ( 75, '2025-11-08 05:49:56.403+00', '2025-11-08 02:49:56.403', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgAyAj21-G8bSZ6lr3DlNCDoAZ6PCtCopokV4i9tqAaJBRE?e=DHiT0c', NULL, NULL),
+    ( 76, '2025-11-08 05:56:11.608+00', '2025-11-08 02:56:11.608', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgAyAj21-G8bSZ6lr3DlNCDoAZ6PCtCopokV4i9tqAaJBRE?e=DHiT0c', NULL, NULL),
+    ( 77, '2025-11-08 06:09:56.049+00', '2025-11-08 03:09:56.049', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgAyAj21-G8bSZ6lr3DlNCDoAZ6PCtCopokV4i9tqAaJBRE?e=DHiT0c', NULL, NULL),
+    ( 78, '2025-11-11 11:06:14.641+00', '2025-11-11 08:06:14.641', 'https://1drv.ms/f/c/12835ef84d0df865/IgAU4RY4zW19T76iRWzgKe4UAZ7mN0I-BVlwxe8_2DbT6BU?e=OkpxlA', NULL, 417.0, 4.24),
+    ( 79, '2025-11-12 18:00:34.203+00', '2025-11-12 15:00:34.203', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgCXwnsanC2ZSaY0O2MjIX8KAXVBVgpxE4yGeiHGA--3T-A?e=9dLR8u', NULL, NULL),
+    ( 80, '2025-11-23 05:40:54.795+00', '2025-11-23 02:40:54.795', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgADlYynhREvRrj_AFfCCVY5AermL74B1AGfSCjUuKJk4n4?e=oNviJQ', NULL, NULL),
+    ( 81, '2025-11-28 10:30:04.859+00', '2025-11-28 07:30:04.859', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgDvTzj9sYp1QboUXFA5KHnTAQsO5muAeD5HUb9EX6sjWVE?e=94Isuo', NULL, NULL),
+    ( 82, '2025-12-10 16:38:37.353+00', '2025-12-10 13:38:37.353', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgCd9miDZhFhTZZO-QGjhjvoAQ5Pn1a9V5Sk03gbULx4paQ?e=uo78uD', NULL, NULL),
+    ( 83, '2025-12-10 17:10:12.820+00', '2025-12-10 14:10:12.820', NULL, 'https://1drv.ms/f/c/12835ef84d0df865/IgCd9miDZhFhTZZO-QGjhjvoAQ5Pn1a9V5Sk03gbULx4paQ?e=uo78uD', NULL, NULL),
+    ( 84, '2025-12-29 17:52:19.241+00', '2025-12-29 14:52:19.241', 'https://1drv.ms/f/c/12835ef84d0df865/IgBQgTcFTQaUTacdGCfaun4pAcJ6DjYfBz0ZqtHvT9bmm1g?e=hvNT8b', NULL, 334.0, -1.3),
+    ( 85, '2026-01-03 11:21:53.097+00', '2026-01-03 08:21:53.097', 'https://1drv.ms/f/c/12835ef84d0df865/IgC_32Kc1g6FQKbtlgt4SqZtAeqjASXi3RAYeRd94Ehosyo?e=27yKHz', 'https://1drv.ms/f/c/12835ef84d0df865/IgCtfvttqI1_Q5-_s8Vi8PnXAa9eEZ4QNJhu1siateXI8q8?e=xCUxA7', 198.0, NULL),
+    ( 86, '2026-01-08 19:19:08.076+00', '2026-01-08 16:19:08.076', 'https://1drv.ms/f/c/12835ef84d0df865/IgAn4J6iOiB9SII1dkTH8oLxAeii8XD93ESeMT5veERAU1A?e=zG70QZ', 'https://1drv.ms/f/c/12835ef84d0df865/IgC_bCEm29uXQ5a4lEgStE5MAb9aEw9hMSzNv-zHhVK_ENI?e=BlbO3Z', 219.0, NULL),
+    ( 87, '2026-01-10 14:54:03.141+00', '2026-01-10 11:54:03.141', 'https://1drv.ms/f/c/12835ef84d0df865/IgC2qkC-BU-cQpMqY2aLBsWWAZH3O-T31QDpqaXutos52YQ?e=A5YlJs', 'https://1drv.ms/f/c/12835ef84d0df865/IgBWVrR5UA_4SqpvczKqHDpAAYE9baJ3ZN3eBr9wfG8TNS4?e=I5Fe6r', NULL, NULL),
+    ( 88, '2026-01-10 16:02:46.344+00', '2026-01-10 13:02:46.344', 'https://1drv.ms/f/c/12835ef84d0df865/IgDIlM_FNzfRS6OpMK19O7aQASw1_jNyMO2GVmxWcG0PpWQ?e=fZbaK2', 'https://1drv.ms/f/c/12835ef84d0df865/IgBWVrR5UA_4SqpvczKqHDpAAYE9baJ3ZN3eBr9wfG8TNS4?e=I5Fe6r', NULL, NULL),
+    ( 89, '2026-01-11 05:25:29.575+00', '2026-01-11 02:25:29.575', 'https://1drv.ms/f/c/12835ef84d0df865/IgAPmPFSNyenRIW1oVnkdAgLAWCzjwX7VuXYC9Ux3r3ufZU?e=W7we2B', NULL, 127.0, NULL),
+    ( 90, '2026-01-11 08:14:35.566+00', '2026-01-11 05:14:35.566', 'https://1drv.ms/f/c/12835ef84d0df865/IgA2OxpZjcYCQ7Va3YP4Y46GAZkNPlWMdJId6YOU5pI_VVs?e=m3pXoJ', NULL, 1113.0, NULL),
+    ( 91, '2026-01-11 08:14:35.764+00', '2026-01-11 05:14:35.764', 'https://1drv.ms/f/c/12835ef84d0df865/IgBhngusSpSpRpjrUFD2ymgjARrooyFZnSGaSi9IvdCssEY?e=riN10I', 'https://1drv.ms/f/c/12835ef84d0df865/IgBvMfnRU-mzTb0FQ-8B3sy5AYDJ8P_Zoj0jWmWyxWFLJV8?e=ntymla', NULL, NULL),
+    ( 92, '2026-01-15 16:51:59.991+00', '2026-01-15 13:51:59.991', 'https://1drv.ms/f/c/12835ef84d0df865/IgANTfSe8uoGQb9rXx8vxg7AAXgqOFtKYlLqSPszG1BbC1M?e=AptnCg', NULL, 88.0, NULL),
+    ( 93, '2026-01-16 05:31:06.498+00', '2026-01-16 02:31:06.498', 'https://1drv.ms/f/c/12835ef84d0df865/IgC2MCD_wce9Q6U5Jx5cYyNlAca5v1_aoY7rNj5F7huWl-k?e=xMfRGX', 'https://1drv.ms/f/c/12835ef84d0df865/IgBG0kWNyGOJSZjdXLOzOui5AUMUfYUY088Vfo0IlbA5QWU?e=2Cml8S', NULL, NULL),
+    ( 94, '2026-01-19 12:20:29.501+00', '2026-01-19 09:20:29.501', 'https://1drv.ms/f/c/12835ef84d0df865/IgAJHb0MA-J2SYs9LqMKcNqoAR5SSXoE1kSCJr0R7_zZSYE?e=VT8yss', 'https://1drv.ms/f/c/12835ef84d0df865/IgCnZjmENTOWRakPpjwZTAbBARYKsG-EQQ-iVKz7K6N-0s8?e=lyXBkh', NULL, NULL),
+    ( 95, '2026-01-19 19:37:00.958+00', '2026-01-19 16:37:00.958', 'https://1drv.ms/f/c/12835ef84d0df865/IgDmsqeBAjISQojxDJwRboNYAQgKVpsYdiPJ2AZ-HXapPKA?e=hoCb2B', NULL, 60.0, NULL),
+    ( 96, '2026-01-25 16:40:33.156+00', '2026-01-25 13:40:33.156', 'https://1drv.ms/f/c/12835ef84d0df865/IgBHwMY0QvD-SJ336vEWEvYYAXPfwGRQEIrWPQwFkIh04GI?e=UmxLgY', 'https://1drv.ms/f/c/12835ef84d0df865/IgDgsKnVWq3gT7fZFT9KHrAIAX-q5ubvrNTHNJkS8d8y_w4?e=qzQ3pv', NULL, NULL),
+    ( 97, '2026-01-30 00:16:19.698+00', '2026-01-29 21:16:19.698', 'https://1drv.ms/f/c/12835ef84d0df865/IgBRiDJ4oL3NRbtm_vOQEn8QAUG-Zs55aKvl4ijvNjr5e5Y?e=ONqR51', 'https://1drv.ms/f/c/12835ef84d0df865/IgBNWps1IP1sRraMpSjvDqjFAUn5nAd8BdPb75680TKNW78?e=yeqTkU', NULL, NULL),
+    ( 98, '2026-01-30 07:28:08.291+00', '2026-01-30 04:28:08.291', 'https://1drv.ms/f/c/12835ef84d0df865/IgCiZiSLHb1PTbV1JqNPdVnnAQU8YlYHvRClBpc46gr1loA?e=g0Pxbc', NULL, NULL, NULL),
+    ( 99, '2026-02-01 14:18:34.083+00', '2026-02-01 11:18:34.083', 'https://1drv.ms/f/c/12835ef84d0df865/IgCsBqUNEqveTYxubKqMtQGmAavqIf0p_dQqRjMrzlWfWlQ?e=5vmZHe', NULL, NULL, NULL),
+    (100, '2026-02-08 02:42:33.025+00', '2026-02-07 23:42:33.025', 'https://1drv.ms/f/c/12835ef84d0df865/IgAUPPDXhMCPRZuvOEm34sxeAVkTwrXf8KI1-2L3pBvIz7A?e=hL43QL', NULL, NULL, NULL),
+    (101, '2026-02-10 20:12:51.816+00', '2026-02-10 17:12:51.816', 'https://1drv.ms/f/c/12835ef84d0df865/IgCwiPMevyMER4legQSLFODbAa7fKXGuKV10A4-ZHpN010w?e=W01vLP', NULL, NULL, NULL),
+    (102, '2026-02-13 19:48:01.197+00', '2026-02-13 16:48:01.197', 'https://1drv.ms/f/c/12835ef84d0df865/IgAl-GLgrJExQKIzBdHRIhEJAZnx577XTZo1RMytc60F3_k?e=B6ZvKG', 'https://1drv.ms/f/c/12835ef84d0df865/IgBJ--wmVBnWTo86c3lOCXVCAcKcE3glLDcSrjo5GNnZceI?e=gU60sj', NULL, NULL),
+    (103, '2026-02-25 17:54:00.941+00', '2026-02-25 14:54:00.941', 'https://1drv.ms/f/c/12835ef84d0df865/IgCzlzC4flkzT5s8x4nES25_AZ7irDzwl-DvHDqnILii6Go?e=OcYUWF', 'https://1drv.ms/f/c/12835ef84d0df865/IgAYw11-mc7OTKrYs2p1-BeAAYxVsZUQ5y7q4N3P56Z6DpU?e=fmKfOL', NULL, NULL),
+    (104, '2026-02-28 16:44:41.475+00', '2026-02-28 13:44:41.475', 'https://1drv.ms/f/c/12835ef84d0df865/IgBuHPh3jmCnTomqclB6w93jAYJBQpQK9V4jCcE5KLabXAc?e=MFe5f9', 'https://1drv.ms/f/c/12835ef84d0df865/IgAEhe5MnWy4RpZ-jCnbnHMtAU17C3T0dB2y-DrYWiV5e0Q?e=AbhvRe', NULL, NULL),
+    (105, '2026-03-01 19:29:18.633+00', '2026-03-01 16:29:18.633', 'https://1drv.ms/f/c/12835ef84d0df865/IgBDBNTiQHI3RJ7FpMljRBbBAR-gmT4lrLDOMiL8moRFy1Q?e=mz8qUa', 'https://1drv.ms/f/c/12835ef84d0df865/IgCh_IB-uJ4DQY10FrDpbEIpAbvLROZMygMCYyIsy60t-b4?e=vcEZDU', NULL, NULL),
+    (106, '2026-03-01 19:29:18.616+00', '2026-03-01 16:29:18.616', 'https://1drv.ms/f/c/12835ef84d0df865/IgBDBNTiQHI3RJ7FpMljRBbBAR-gmT4lrLDOMiL8moRFy1Q?e=mz8qUa', 'https://1drv.ms/f/c/12835ef84d0df865/IgCh_IB-uJ4DQY10FrDpbEIpAbvLROZMygMCYyIsy60t-b4?e=vcEZDU', NULL, NULL),
+    (107, '2026-03-28 12:05:51.966+00', '2026-03-28 09:05:51.966', 'https://1drv.ms/f/c/12835ef84d0df865/IgCYZIrFYKL9R4ymwMiJYyWjAULEwtUObbn1zpmoB0sil64?e=oJLijR', 'https://1drv.ms/f/c/12835ef84d0df865/IgBkI6m9oiD7TpjS-qa4EEI0AYqVnoyzZJgBfQ9bhxxSX5s?e=ldeoCB', NULL, NULL),
+    (108, '2026-03-28 19:04:11.208+00', '2026-03-28 16:04:11.208', 'https://1drv.ms/f/c/12835ef84d0df865/IgBXlnPT6HbURLkSahxvt6zQATaAh0MCWSaZ4_doGw8CJbA?e=ugy7fq', 'https://1drv.ms/f/c/12835ef84d0df865/IgDjzCPEtm-JTLedHwdCc9ImARXjwchZH86R8Kb2EviljoY?e=Q2q8aI', NULL, NULL),
+    (109, '2026-04-01 20:55:53.791+00', '2026-04-01 17:55:53.791', 'https://1drv.ms/f/c/12835ef84d0df865/IgBAqxFZV8SYR4d6LimPHj2aAdWaBcds47LNFZXx0GzyxFg?e=4wbLrf', 'https://1drv.ms/f/c/12835ef84d0df865/IgA57qvMjX8pQLdyG3oVzmjoARx7WkwbiAOPLonJax1LNlc?e=JnbbEU', NULL, NULL),
+    (110, '2026-04-02 13:29:20.058+00', '2026-04-02 10:29:20.058', 'https://1drv.ms/f/c/12835ef84d0df865/IgBNWAOQeoxvTrqYQizC9EgRAbFbrIroWAjzpsK75zt0rdA?e=kSzZMs', 'https://1drv.ms/f/c/12835ef84d0df865/IgC8NX2raimGR45WCwuDZqCxAd8_p4zdMtEsApfFDv6dWB0?e=ju8gaP', NULL, NULL),
+    (111, '2026-04-02 13:29:20.033+00', '2026-04-02 10:29:20.033', 'https://1drv.ms/f/c/12835ef84d0df865/IgBNWAOQeoxvTrqYQizC9EgRAbFbrIroWAjzpsK75zt0rdA?e=kSzZMs', 'https://1drv.ms/f/c/12835ef84d0df865/IgC8NX2raimGR45WCwuDZqCxAd8_p4zdMtEsApfFDv6dWB0?e=ju8gaP', NULL, NULL),
+    (112, '2026-04-02 13:29:26.291+00', '2026-04-02 10:29:26.291', 'https://1drv.ms/f/c/12835ef84d0df865/IgBNWAOQeoxvTrqYQizC9EgRAbFbrIroWAjzpsK75zt0rdA?e=kSzZMs', 'https://1drv.ms/f/c/12835ef84d0df865/IgBKps_ljZnTT7SyYbPobT6xAa4WUAfwAleEnUVO4xrbQRo?e=cJXiHh', NULL, NULL),
+    (113, '2026-04-02 17:24:23.166+00', '2026-04-02 14:24:23.166', 'https://1drv.ms/f/c/12835ef84d0df865/IgAQ75-f8SL_QoHkYRGnsft_AWDdyrzlNMCeEPbkolPpZU4?e=uuGWIf', 'https://1drv.ms/f/c/12835ef84d0df865/IgDM6D7gP8BaQKpT5gzC7aBaATlrY3oPPIy0uw7broY_4f4?e=wXQEtU', NULL, NULL),
+    (114, '2026-04-02 17:24:23.133+00', '2026-04-02 14:24:23.133', 'https://1drv.ms/f/c/12835ef84d0df865/IgAQ75-f8SL_QoHkYRGnsft_AWDdyrzlNMCeEPbkolPpZU4?e=uuGWIf', 'https://1drv.ms/f/c/12835ef84d0df865/IgDM6D7gP8BaQKpT5gzC7aBaATlrY3oPPIy0uw7broY_4f4?e=wXQEtU', NULL, NULL),
+    (115, '2026-04-02 17:30:31.975+00', '2026-04-02 14:30:31.975', 'https://1drv.ms/f/c/12835ef84d0df865/IgDtXSFXCdYNSpydXdUvH5dJAWTso4CCAJzxW7NRhUkrMU4?e=05DY9S', 'https://1drv.ms/f/c/12835ef84d0df865/IgApmcN2enXlTJZq2XTz3YvmAaXT8fekPthKUZwDZbocqg4?e=70vd0I', NULL, NULL),
+    (116, '2026-04-02 17:30:31.916+00', '2026-04-02 14:30:31.916', 'https://1drv.ms/f/c/12835ef84d0df865/IgDtXSFXCdYNSpydXdUvH5dJAWTso4CCAJzxW7NRhUkrMU4?e=05DY9S', 'https://1drv.ms/f/c/12835ef84d0df865/IgApmcN2enXlTJZq2XTz3YvmAaXT8fekPthKUZwDZbocqg4?e=70vd0I', NULL, NULL),
+    (117, '2026-04-02 17:30:38.641+00', '2026-04-02 14:30:38.641', 'https://1drv.ms/f/c/12835ef84d0df865/IgDtXSFXCdYNSpydXdUvH5dJAWTso4CCAJzxW7NRhUkrMU4?e=05DY9S', 'https://1drv.ms/f/c/12835ef84d0df865/IgCFiBaRVCfRQan5DpK3WNs7ARxMeDoEnqRqCkPJOJw0t10?e=FKPf7b', NULL, NULL),
+    (118, '2026-04-02 17:30:38.583+00', '2026-04-02 14:30:38.583', 'https://1drv.ms/f/c/12835ef84d0df865/IgDtXSFXCdYNSpydXdUvH5dJAWTso4CCAJzxW7NRhUkrMU4?e=05DY9S', 'https://1drv.ms/f/c/12835ef84d0df865/IgCFiBaRVCfRQan5DpK3WNs7ARxMeDoEnqRqCkPJOJw0t10?e=FKPf7b', NULL, NULL),
+    (119, '2026-04-02 18:59:30.850+00', '2026-04-02 15:59:30.850', 'https://1drv.ms/f/c/12835ef84d0df865/IgDJYJ5Kk27mQ4sAMUb86Q5CAaI-blEpHRSRZcUdghOEc90?e=0QpDoe', 'https://1drv.ms/f/c/12835ef84d0df865/IgBBHuHCyZDxTa7UKlzZJX12ASGR263ZY4ADDXwMHBzEzng?e=U0na0G', NULL, NULL),
+    (120, '2026-04-02 18:59:30.783+00', '2026-04-02 15:59:30.783', 'https://1drv.ms/f/c/12835ef84d0df865/IgDJYJ5Kk27mQ4sAMUb86Q5CAaI-blEpHRSRZcUdghOEc90?e=0QpDoe', 'https://1drv.ms/f/c/12835ef84d0df865/IgBBHuHCyZDxTa7UKlzZJX12ASGR263ZY4ADDXwMHBzEzng?e=U0na0G', NULL, NULL),
+    (121, '2026-04-02 18:59:37.566+00', '2026-04-02 15:59:37.566', 'https://1drv.ms/f/c/12835ef84d0df865/IgDJYJ5Kk27mQ4sAMUb86Q5CAaI-blEpHRSRZcUdghOEc90?e=0QpDoe', 'https://1drv.ms/f/c/12835ef84d0df865/IgAt_RH6dBzwQo0VvRqNOELWAR16ILpOLWlxr1KhGiLnpxs?e=GGy4OV', NULL, NULL),
+    (122, '2026-04-02 18:59:37.533+00', '2026-04-02 15:59:37.533', 'https://1drv.ms/f/c/12835ef84d0df865/IgDJYJ5Kk27mQ4sAMUb86Q5CAaI-blEpHRSRZcUdghOEc90?e=0QpDoe', 'https://1drv.ms/f/c/12835ef84d0df865/IgAt_RH6dBzwQo0VvRqNOELWAR16ILpOLWlxr1KhGiLnpxs?e=GGy4OV', NULL, NULL),
+    (123, '2026-04-02 19:56:01.958+00', '2026-04-02 16:56:01.958', 'https://1drv.ms/f/c/12835ef84d0df865/IgA4HQah7VFLTZr8PPgjORa7AaXJBKiQUA8flMUzrP_qeFI?e=Khfkc6', 'https://1drv.ms/f/c/12835ef84d0df865/IgDQY-0zG3MLS75H0NnV82YcAXQl-9hYAnZL6U-Ye-1At_E?e=g0BQy0', NULL, NULL),
+    (124, '2026-04-04 22:26:03.650+00', '2026-04-04 19:26:03.650', 'https://1drv.ms/f/c/12835ef84d0df865/IgAPQa42FC-TRpbcch5ocL2AAS1jhk1VUoWlMKzu9n4iKKU?e=tQlgMi', 'https://1drv.ms/f/c/12835ef84d0df865/IgAvjhllP79qSYOfXA9fxxMCAV8TpUbI-THR2apDt7_w0MY?e=4sHTnv', NULL, NULL),
+    (125, '2026-04-08 00:55:35.475+00', '2026-04-07 21:55:35.475', 'https://1drv.ms/f/c/12835ef84d0df865/IgC7Yf_tqjyOQK1a4Im7rvMfAWxzr5QhXqe4VixwpV83FBs?e=0HZwf4', 'https://1drv.ms/f/c/12835ef84d0df865/IgBtPwk4aJnUTaPvg9IS1qc1AUVzB40nyoan35o7aCclfbs?e=NcSXVd', NULL, NULL),
+    (126, '2026-04-12 13:47:13.583+00', '2026-04-12 10:47:13.583', 'https://1drv.ms/f/c/12835ef84d0df865/IgB89UWC2dBkQa96PdbBmqYdAaymEEPupBR0MucS2wmRp64?e=TWsua4', 'https://1drv.ms/f/c/12835ef84d0df865/IgBHoa1KtWtjR63crMY7ow4UAZQbmt0nKxagLzlamBVEf68?e=bLdNW5', NULL, NULL),
+    (127, '2026-04-16 16:25:34.383+00', '2026-04-16 13:25:34.383', 'https://1drv.ms/f/c/12835ef84d0df865/IgCUCvIgF-a9Q7znCBmovFIMAW_blunAJeZmKCXMxbBlsvg?e=L7FA8g', NULL, NULL, NULL),
+    (128, '2026-04-17 15:30:36.741+00', '2026-04-17 12:30:36.741', NULL, NULL, NULL, NULL);
+
+-- 5. Alinha as sequences SERIAL aos ids inseridos.
+SELECT setval('area_id_area_seq', 3, true);
+SELECT setval('unidade_federativa_id_unidade_federativa_seq', 3, true);
+SELECT setval('localizacao_id_localizacao_seq', 3, true);
+SELECT setval('terminal_id_terminal_seq', 3, true);
+SELECT setval('evento_id_evento_seq', 128, true);
+SELECT setval('evento_cf_id_evento_cf_seq', 128, true);
+
+COMMIT;
+
+-- ----------------------------------------------------------------------------
+-- Sumário da extração
+-- Eventos:                128
+-- Hyperlinks extraídos:   173
+--   sincrofasores (H):    95
+--   oscilografias (I):    78
+-- Pares id_evento_validado: 12
+-- Células com texto-marcador (sem link): 76
+-- ----------------------------------------------------------------------------
